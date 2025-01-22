@@ -1,6 +1,5 @@
 {
     "name": "quebecstudio/safename",
-    "version": "1.0.0",
     "description": "Laravel validation rule to protect against reserved usernames and words",
     "type": "library",
     "license": "MIT",

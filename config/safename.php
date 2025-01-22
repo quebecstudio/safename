@@ -11,7 +11,7 @@ declare(strict_types=1);
  *
  * 1. Using the validation rule in requests:
  *    $request->validate([
- *        'username' => ['required', new \VotreNom\SafeName\Rules\SafeName()]
+ *        'username' => ['required', new \Quebecstudio\SafeName\Rules\SafeName()]
  *    ]);
  *
  * 2. Custom configuration:
