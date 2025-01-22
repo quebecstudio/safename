@@ -1,0 +1,66 @@
+{
+    "name": "quebecstudio/safename",
+    "version": "1.0.0",
+    "description": "Laravel validation rule to protect against reserved usernames and words",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Quebecstudio\\SafeName\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Quebecstudio\\SafeName\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Quebecstudio\\SafeName\\SafeNameServiceProvider"
+            ]
+        }
+    },
+    "authors": [
+        {
+            "name": "Richard Trudel",
+            "email": "rtrudel@quebec.studio"
+        }
+    ],
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "require": {
+        "php": "^8.2",
+        "illuminate/support": "^11.0",
+        "illuminate/contracts": "^11.0"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^9.0",
+        "pestphp/pest": "^3.0",
+        "pestphp/pest-plugin-laravel": "^3.0",
+        "rector/rector": "^2.0",
+        "laravel/pint": "^1.20",
+        "peckphp/peck": "*"
+    },
+    "config": {
+        "allow-plugins": {
+            "pestphp/pest-plugin": true
+        }
+    },
+    "scripts": {
+        "lint": "pint",
+        "refactor": "rector",
+        "test:type-coverage": "pest --type-coverage --min=100",
+        "test:typos": "peck",
+        "test:lint": "pint --test",
+        "test:unit": "pest --parallel",
+        "test:refactor": "rector --dry-run",
+        "test": [
+            "@test:type-coverage",
+            "@test:typos",
+            "@test:unit",
+            "@test:lint",
+            "@test:refactor"
+        ]
+    }
+}
