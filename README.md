@@ -2,6 +2,12 @@
 
 A Laravel validation package to prevent the use of reserved words in usernames or other fields.
 
+## Support for Ukraine and Call for Solidarity 🇺🇦
+
+Québec Studio supports Ukraine and its people in their quest for peace, freedom, and sovereignty.
+
+If you do not support the Ukrainian people in this unjust war they never wanted, we kindly ask you not to use our software, as it is intended for those who wish to be on the right side of history.
+
 ## Features
 
 - Exact word matching (e.g., `admin` would block only `admin`)
